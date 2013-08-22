@@ -3,9 +3,9 @@
 # A puppet module for irssi
 
 class irssi (
-  $ensure                     = 'present',
-  $irssi_plugins              = '',
-  $irssi_homefolder           = '',
+  $ensure                 = 'present',
+  $irssi_plugins          = '',
+  $irssi_homefolder       = '',
   $irssi_own_config_path  = 'puppet:///modules/irssi/config',
 ) {
   case $::operatingsystem {
